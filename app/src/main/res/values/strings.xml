@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Logs</string>
+    <string name="register">REGISTER</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

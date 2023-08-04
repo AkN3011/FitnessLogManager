@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4EADE1"
+    tools:context=".Home_page"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:indeterminateOnly="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/calorie_progressbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_goal"
+                        android:layout_width="205dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="75dp"
+                        android:text="Goal"
+                        android:textColor="#121010"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/GoalCalories"
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:gravity="center"
+                        android:text="Set Goal"
+                        android:textColor="@android:color/black"
+                        android:textSize="34sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_cal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="75dp"
+                        android:text="Current" />
+
+                    <TextView
+                        android:id="@+id/Calories"
+                        android:layout_width="205dp"
+                        android:layout_height="132dp"
+                        android:gravity="center"
+                        android:textSize="34sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/CalorieText"
+                android:layout_width="390dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="180dp"
+                android:hint="Calories"
+                android:inputType="text"
+                android:singleLine="false"
+                android:textColor="#100D0D"
+                android:textColorHint="#020202" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="onClick"
+            android:text="Add" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
